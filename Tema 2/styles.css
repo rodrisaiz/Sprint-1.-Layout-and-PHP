@@ -1,0 +1,198 @@
+
+*{
+    box-sizing: border-box;
+    display:flex; 
+    flex-direction:column;
+}
+
+header{
+    background: black;
+    padding: 15px;
+    width: 100%;  
+}
+
+.head{
+    background: #2c445c;
+    padding: 10px; 
+    display:flex; 
+    flex-direction:row; 
+}
+
+.logo{
+    background: #f43c54 ;
+    margin: 5px;
+    padding: 10px;
+    flex: 1 1 auto;
+}
+
+nav{
+    background: #f43c54 ;
+    margin: 5px;
+    padding: 10px; 
+    flex: 5 1 auto; 
+}
+
+.social{
+    background: #f43c54;
+    margin: 5px;
+    padding: 10px; 
+    flex: 1 1 auto;
+}
+
+.cover{
+    background: #f47c3c;
+    padding: 10px;
+    margin-top: 10px;    
+}
+
+.text-cover{
+    background: #fcec84;
+    padding: 10px;
+}
+
+.cuerpo{
+    margin-top: 20px;
+    background: black;
+    padding: 15px;
+    width: 100%;
+    display:flex; 
+    flex-direction:row;
+}
+
+.articulos{
+    background: #2c445c;
+    padding: 20px;
+    width: 70%;
+    display:flex; 
+    flex-flow: row wrap;   
+}
+
+.articulo{
+    background: #3d5581;
+    padding: 10px;
+    margin: 5px;
+    order: 1;
+    flex-grow: 1;
+    width: auto;
+    flex-basis: 40%;   
+}
+
+.cuerpo-text{
+    background: #74a4c4;
+    padding: 10px;
+    margin: 5px;
+    order: 2;
+    align-self: flex-end;
+    flex-grow: 4;
+    flex-basis: 20%;
+    
+}
+
+
+
+aside{
+    background: #f43c54 ;
+    padding: 10px;
+    width: 30%;
+
+}
+
+.articulo-dos{
+    background: #fcec84;
+    padding: 10px;
+    margin: 5px;
+}
+footer{
+    margin-top: 20px;
+    background: black;
+    padding: 15px;
+   
+    
+}
+.foot{
+    background: #fcec84;
+    padding: 10px;
+    display: flexbox;
+   
+}
+/* phones */
+@media screen and (max-width: 480px ){
+
+    .head{
+        display:flex; 
+    flex-flow: column wrap; 
+
+    }
+
+    .cuerpo{
+        
+        display:flex; 
+        flex-flow: column wrap;
+    }
+
+        
+    .articulos{
+        width: 100%;
+        display:flex; 
+        flex-flow: column wrap;   
+    }
+
+    .cuerpo-text{
+        width: 100%;
+        display:flex; 
+        flex-flow: column wrap;   
+        
+    }
+
+    aside{
+        width: 100%;
+        display:flex; 
+        flex-flow: column wrap;   
+
+    }
+
+
+
+}
+
+/* table */
+@media screen and (min-width: 481px) and (max-width: 801px ){
+
+    .head{
+        display:flex; 
+    flex-flow: row wrap; 
+
+    }
+
+    .cuerpo{
+        
+        display:flex; 
+        flex-flow: column wrap;
+    }
+
+        
+    .articulos{
+        width: 100%;
+        display:flex; 
+        flex-flow: column wrap;   
+    }
+
+    .cuerpo-text{
+        width: 100%;
+        display:flex; 
+        flex-flow: column wrap;   
+        
+    }
+
+    aside{
+        width: 100%;
+        display:flex; 
+        flex-flow: column wrap;   
+
+    }
+
+/* After 801px fullscreen size  */
+
+
+}
+
