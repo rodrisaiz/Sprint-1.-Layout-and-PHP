@@ -3,51 +3,56 @@
     box-sizing: border-box;
     display:flex; 
     flex-direction:column;
+    max-width: 1200px;
+   
 }
 
 header{
     background: black;
     padding: 15px;
     width: 100%;  
+
 }
 
 .head{
     background: #2c445c;
-    padding: 10px; 
+    padding: 15px; 
     display:flex; 
     flex-direction:row; 
 }
 
 .logo{
-    background: #f43c54 ;
+    background: #f43c54;
     margin: 5px;
-    padding: 10px;
+    padding: 15px;
     flex: 1 1 auto;
 }
 
 nav{
     background: #f43c54 ;
     margin: 5px;
-    padding: 10px; 
+    padding: 15px; 
     flex: 5 1 auto; 
 }
 
 .social{
     background: #f43c54;
     margin: 5px;
-    padding: 10px; 
+    padding: 15px; 
     flex: 1 1 auto;
 }
 
 .cover{
     background: #f47c3c;
-    padding: 10px;
+    padding: 15px;
     margin-top: 10px;    
 }
 
 .text-cover{
     background: #fcec84;
-    padding: 10px;
+    padding: 15px;
+    margin-left: 5px;
+    margin-right: 5px;
 }
 
 .cuerpo{
@@ -61,7 +66,7 @@ nav{
 
 .articulos{
     background: #2c445c;
-    padding: 20px;
+    padding: 15px;
     width: 70%;
     display:flex; 
     flex-flow: row wrap;   
@@ -69,17 +74,17 @@ nav{
 
 .articulo{
     background: #3d5581;
-    padding: 10px;
+    padding: 15px;
     margin: 5px;
     order: 1;
     flex-grow: 1;
     width: auto;
-    flex-basis: 40%;   
+    flex-basis: 45%;   
 }
 
 .cuerpo-text{
     background: #74a4c4;
-    padding: 10px;
+    padding: 15px;
     margin: 5px;
     order: 2;
     align-self: flex-end;
@@ -92,14 +97,14 @@ nav{
 
 aside{
     background: #f43c54 ;
-    padding: 10px;
+    padding: 15px;
     width: 30%;
 
 }
 
 .articulo-dos{
     background: #fcec84;
-    padding: 10px;
+    padding: 15px;
     margin: 5px;
 }
 footer{
@@ -111,10 +116,14 @@ footer{
 }
 .foot{
     background: #fcec84;
-    padding: 10px;
+    padding: 15px;
+    margin-left: 20px;
+    margin-right: 20px;
     display: flexbox;
    
 }
+
+
 /* phones */
 @media screen and (max-width: 480px ){
 
@@ -160,7 +169,7 @@ footer{
 
     .head{
         display:flex; 
-    flex-flow: row wrap; 
+        flex-flow: row wrap; 
 
     }
 
@@ -195,4 +204,6 @@ footer{
 
 
 }
+
+
 
