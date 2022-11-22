@@ -177,13 +177,15 @@ footer{
         
         display:flex; 
         flex-flow: column wrap;
+        background: yellow;  
     }
 
         
     .articulos{
         width: 100%;
         display:flex; 
-        flex-flow: column wrap;   
+        flex-flow: column wrap;
+         
     }
 
     .cuerpo-text{
