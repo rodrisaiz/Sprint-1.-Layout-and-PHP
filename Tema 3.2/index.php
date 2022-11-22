@@ -56,27 +56,16 @@ echo '<h2>' . "Exercici 3 " .  '</h2>';
 
 echo '<h2>' . "Exercici 4 " .  '</h2>';
 
-    $end = 4;
 
+    function amagatall3($end = 10){
 
-    function amagatall3($end){
-
-    
-        if ($end >= 1){
+        for ($i = 0; $i <= $end; $i += 2 ) {
+            echo $i . "<br>";
+        }
+        }
         
-            for ($i = 0; $i <= $end; $i += 2 ){
-            echo $i . "<br>";
-            }
-        }else{
+        amagatall3();
 
-            $end = 10;
-
-            for ($i = 0; $i <= $end; $i += 2 ) {
-            echo $i . "<br>";
-            }
-        }
-        }
-    amagatall3($end);
 
 echo '<h2>' . "Exercici 5 " .  '</h2>';
 
