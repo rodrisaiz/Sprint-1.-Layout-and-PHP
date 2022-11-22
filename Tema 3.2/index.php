@@ -82,17 +82,21 @@ echo '<h2>' . "Exercici 5 " .  '</h2>';
 
 $nota = 82;
 
+define ('EXCELENTE', 60);
+define ('MUY_BUENO', 45);
+define ('BUENO', 33);
+
 function student($nota){
 
-    if($nota >= 60){
+    if($nota >= EXCELENTE){
 
         echo "El estudiante pertenece a la primera divicion";
 
-    }elseif(($nota >= 45) && ($nota <= 59)){
+    }elseif(($nota >= MUY_BUENO)){
 
         echo "El estudiante pertenece a la segunda divicion";
 
-    }elseif(($nota >= 33) && ($nota <= 44)){
+    }elseif(($nota >= BUENO)){
 
         echo "El estudiante pertenece a la tercera divicion";
         
