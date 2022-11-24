@@ -5,12 +5,16 @@ class Rectangulo extends Shape{
 
     // Metodo general 
 
-    public function calcularAreaRectangulo ($ancho,$alto){
+    public function calcularArea($ancho,$alto){
             
-        return self:: calcularArea($ancho,$alto);
+        $area = ($ancho * $alto);
+        
+        return $area;
+            
+    }   
         
                 
-        }   
+        
 }   
 
 ?>

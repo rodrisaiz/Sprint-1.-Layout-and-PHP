@@ -4,7 +4,10 @@ require_once('employee.php');
 
 $empleado= new Employee();
 
-echo $empleado->print("Juan",7500);
+ $nombre = "Juan";
+ $sueldo = 7500;
+
+$empleado->print($nombre, $sueldo);
 
 ?>
 

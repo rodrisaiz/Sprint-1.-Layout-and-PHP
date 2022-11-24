@@ -4,11 +4,11 @@ class Triangulo extends Shape{
 
 // Metodo general 
 
-public function calcularAreaTriangulo ($ancho,$alto){
+public function calcularArea($ancho,$alto){
         
-    return self:: calcularArea($ancho,$alto) / 2 ;
-    
-    
+    $area = ($ancho * $alto) / 2;
+        
+        return $area;
             
     }   
 

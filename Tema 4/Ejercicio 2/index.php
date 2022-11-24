@@ -4,7 +4,7 @@
 
 require_once('shape.php');
 
-$obj1 = new Shape();
+$shape = new Shape();
 
 $ancho = 50; 
 $alto = 20; 
@@ -13,18 +13,18 @@ $alto = 20;
 
 require_once('Triangulo.php');
 
-$obj = new Triangulo();
+$triangulo = new Triangulo();
 
-echo " <br> El area del triangulo es: " . $obj-> calcularAreaTriangulo($ancho,$alto);
+echo " <br> El area del triangulo es: " . $triangulo-> calcularArea($ancho,$alto);
 
 
 //Area rectangulo.
 
 require_once('Rectangulo.php');
 
-$obj = new Rectangulo();
+$rectangulo = new Rectangulo();
 
-echo " <br> El area del rectangulo es: " . $obj-> calcularAreaRectangulo($ancho,$alto);
+echo " <br> El area del rectangulo es: " . $rectangulo-> calcularArea($ancho,$alto);
 
 
 ?>
