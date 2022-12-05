@@ -8,21 +8,29 @@ class Employee {
     public $nombre;
     public $sueldo;
 
+    // Constructor
+
+    function _construct($nombre, $sueldo) {
+			
+        $this->nombre = $nombre;
+        $this->sueldo = $sueldo;
+    }
+
     
     // Metodo general 
 
-    public function print($nombre,$sueldo){
+    public function print($nombre, $sueldo){
         
         define("BASEIMPUESTO",6000);
         
         
-            if ($nombre >= BASEIMPUESTO){
+            if ($this -> sueldo >= BASEIMPUESTO){
         
-                print  "<br>" . $nombre . " debe pagar impuesto."; 
+                print  "<br>" . $this  -> nombre  . " debe pagar impuesto."; 
                     
             }else{
         
-                print  "<br>" . $nombre . " no debe pagar impuesto."; 
+                print  "<br>" . $this -> nombre  . " no debe pagar impuesto."; 
                 
         }   
         

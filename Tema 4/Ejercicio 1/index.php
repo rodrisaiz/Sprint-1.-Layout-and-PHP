@@ -2,12 +2,9 @@
 
 require_once('employee.php');
 
-$empleado= new Employee();
+$empleado = new Employee("Juan", 7500);
 
- $nombre = "Juan";
- $sueldo = 7500;
-
-$empleado->print($nombre, $sueldo);
+$empleado->print("Juan", 7500);
 
 ?>
 

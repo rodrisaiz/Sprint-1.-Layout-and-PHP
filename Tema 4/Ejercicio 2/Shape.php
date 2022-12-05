@@ -19,7 +19,7 @@ class Shape{
 
     // Metodo general 
 
-    public function calcularArea($ancho,$alto){
+    abstract public function calcularArea($ancho,$alto){
         
                 
         }   
