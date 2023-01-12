@@ -1,22 +1,17 @@
 <?php
+require_once('Shape.php');
 
-class Rectangulo extends Shape{
 
+Class Rectangulo extends Shape {
+     
+  public function calcularArea() {
+  
+    $area =  $this->ancho * $this->alto;
 
-    // Metodo general 
+    return $area;
+  }
 
-    public function calcularArea($ancho,$alto){
-            
-        $area = ($ancho * $alto);
-        
-        return $area;
-            
-    }   
-        
-                
-        
-}   
-
+}
 ?>
 
 

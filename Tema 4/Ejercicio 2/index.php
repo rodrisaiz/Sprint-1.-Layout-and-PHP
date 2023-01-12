@@ -1,31 +1,21 @@
 <?php
 
-//Set valores (ancho / alto ).
+    //Area triangulo.
 
-require_once('shape.php');
+    require_once('Triangulo.php');
 
-$shape = new Shape();
-
-$ancho = 50; 
-$alto = 20; 
-
-//Area triangulo.
-
-require_once('Triangulo.php');
-
-$triangulo = new Triangulo();
-
-echo " <br> El area del triangulo es: " . $triangulo-> calcularArea($ancho,$alto);
+        $triangulo1 = new Triangulo(50, 20);
 
 
-//Area rectangulo.
+        echo " <br> El area del triangulo es: " . $triangulo1-> calcularArea();
 
-require_once('Rectangulo.php');
 
-$rectangulo = new Rectangulo();
+    //Area rectangulo.
 
-echo " <br> El area del rectangulo es: " . $rectangulo-> calcularArea($ancho,$alto);
+    require_once('Rectangulo.php');
 
+    $rectangulo1 = new Rectangulo(50, 20);
+    echo " <br> El area del rectangulo es: " . $rectangulo1-> calcularArea();
 
 ?>
 
